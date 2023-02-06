@@ -1,0 +1,46 @@
+<head>
+    <title>DHBB 2018</title>
+    <style type="text/css">
+		html, body {
+		  height: 100%;
+		}
+		.purple-square-container {
+		  height: 100%;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+		.purple-square {
+		  background-color: #B10DC9;
+		  width: 300px;
+		  height: 300px;
+		}
+        .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+
+	</style>
+</head>
+<body style="background-color:powderblue;">
+    <div class="purple-square-container">
+        <button class="button button1 type="button" onClick="onClick()">Gacha</button>
+	</div>
+    <script>
+        var clicks = 0;
+        function onClick() {
+        clicks += 1;
+        if (clicks<=50) window.alert("Nghiệp của bạn quá mạnh, hãy gacha lại!!!\nĐiểm nghiệp hiện tại của bạn là "+clicks);
+        else window.alert("Chúc mừng !!! Nghiệp của bạn đã giảm về mức cho phép");
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+</body>
